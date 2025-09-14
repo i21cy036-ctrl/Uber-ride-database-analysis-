@@ -72,7 +72,7 @@ Editor: VS Code + PostgreSQL extension
 
 📈 Project Flow
 
-Uber_Ride_Database/
+```Uber_Ride_Database/
 ├── csv_files/
 │   ├── ncr_ride_bookings.csv
 ├── sql_load/
