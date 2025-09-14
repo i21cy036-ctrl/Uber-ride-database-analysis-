@@ -24,4 +24,5 @@ Advanced analytics:
 🌍 Ranking pickup locations by booking value
 
 🔹 Why this project?
+
 It transforms raw ride-booking data into actionable insights—useful for learning SQL, practicing analytics, or modeling real-world business KPIs in the ride-hailing domain.
