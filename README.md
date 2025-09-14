@@ -1,28 +1,47 @@
-# 📊 Uber Ride Analytics Database
+🚕 Uber Ride Database SQL Project
 
-This project is a PostgreSQL database + SQL analytics toolkit designed to simulate and analyze an Uber-style ride booking system.
-This SQL file defines the uber_ride database with schema, sample data import, and analytical queries. It captures bookings, customers, drivers, payments, distances, ratings, and cancellations. Included queries explore ride counts, revenue trends, top customers/drivers, cancellations, and booking value insights.
+A complete SQL project simulating an Uber-style ride booking system.
+This project demonstrates database creation, data import from CSV, and SQL queries to analyze rides, customers, drivers, payments, and cancellations.
 
-🔹 What’s inside?
+📊 Project Overview
 
-- A rich schema (uber_ride) capturing bookings, customers, drivers, payments, ride distances, ratings, and cancellations.
+This project answers key business questions for a ride-hailing platform using SQL queries. It includes:
 
-- Data import pipeline from CSV into PostgreSQL via COPY.
+- Managing Rides, Customers, Drivers, and Payments data
 
-- Exploratory queries: ride counts, booking status, top pickup hubs, payment method usage, revenue trends.
+- Importing data from CSV into PostgreSQL
 
-Advanced analytics:
+- Writing queries to analyze:
 
-🚕 Top drivers by rating & ride volume
+- Ride volumes and booking status
 
-📈 Monthly ride completion trends
+- Top pickup hubs and customer trends
 
-💰 Top 5 customers driving revenue
+- Cancellation patterns (customer vs. driver)
 
-❌ Cancellation patterns (customer vs. driver)
+- Revenue and booking value insights
 
-🌍 Ranking pickup locations by booking value
+- Driver and customer performance ratings
 
-🔹 Why this project?
+- The project showcases SQL fundamentals such as joins, aggregations, GROUP BY, HAVING, ranking, and window functions to replicate real-world business analytics.
 
-It transforms raw ride-booking data into actionable insights—useful for learning SQL, practicing analytics, or modeling real-world business KPIs in the ride-hailing domain.
+🗂️ Dataset Structure
+
+| Column                                    | Description                         |
+| ----------------------------------------- | ----------------------------------- |
+| **Date, Time**                            | Booking date and time               |
+| **Booking\_ID**                           | Unique ride identifier              |
+| **Booking\_Status**                       | Completed, Cancelled, Incomplete    |
+| **Customer\_ID**                          | Unique customer reference           |
+| **Vehicle\_Type**                         | Car, Bike, Auto, etc.               |
+| **Pickup\_Location, Drop\_Location**      | Ride start and end points           |
+| **Avg\_VTAT, Avg\_CTAT**                  | Average wait & completion times     |
+| **Cancelled\_Rides\_by\_Customer**        | Number of cancellations by customer |
+| **Reason\_for\_Cancelling\_by\_Customer** | Customer cancellation reason        |
+| **Cancelled\_Rides\_by\_Driver**          | Number of cancellations by driver   |
+| **Driver\_Cancellation\_Reason**          | Driver cancellation reason          |
+| **Incomplete\_Rides**                     | Unfinished rides                    |
+| **Booking\_Value**                        | Ride cost                           |
+| **Ride\_Distance**                        | Distance traveled (km)              |
+| **Driver\_Ratings, Customer\_Rating**     | Ratings given post-ride             |
+| **Payment\_Method**                       | Cash, UPI, Card, Wallet             |
